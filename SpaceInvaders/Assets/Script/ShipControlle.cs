@@ -5,19 +5,21 @@ using UnityEngine;
 public class ShipControlle : MonoBehaviour {
     private new Rigidbody2D rigidbody;
     private Vector2 movement;
-    private Vector2 movementX;
+    private int posicionX;
+
+    [Range(1,2)]
     public float speed = 1f;
 
-    void Start() { // Se llama a Start antes de la primera actualización del cuadro
+    void Start() {
         rigidbody = GetComponent<Rigidbody2D>();
-        int posicionX = Random.Range(-100, 100);
-        Debug.Log("Posición inicial: " + posicionX);
+        // Posición inicial de la nave
+        posicionX = Random.Range(-50, 50);
         movement = new Vector2(posicionX, 0);
         rigidbody.AddForce(movement);
-        // Debug.Log(x);
     }
 
-    void Update() { // Update se llama una vez por frame
+    void Update() {
+        // Se obtienen datos de los input horizontal y vertical
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         movement = new Vector2(moveHorizontal, moveVertical);
