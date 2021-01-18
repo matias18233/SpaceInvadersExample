@@ -17,16 +17,21 @@ public class ShipControlle : MonoBehaviour {
         movement = new Vector2(posicionX, 0);
         rigidbody.AddForce(movement);
     }
-
     void Update() {
         // Se obtienen datos de los input horizontal y vertical
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         movement = new Vector2(moveHorizontal, moveVertical);
+
+        StartCoroutine(Fade());
     }
-    
     void FixedUpdate() { // FixedUpdate se llama en cada fixed frame-rate frame. (50 llamadas por segundo, por defecto)
         // Aplica la fuerza al Rigidbody2d
         rigidbody.AddForce(movement * speed * 5f);
+    }
+
+    IEnumerator Fade() {
+        
+        yield return new WaitForSeconds(.1f);
     }
 }
