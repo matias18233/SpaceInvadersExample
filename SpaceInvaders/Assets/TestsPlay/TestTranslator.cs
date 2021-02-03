@@ -51,6 +51,12 @@ namespace Tests {
                 rb.velocity = velocity;
             }
         }
-    }
+        /*
+        Algunas ideas:
 
+        ¿Qué pasa si ejecutamos trans.Move(new Vector2(1f,1f))?. ¿El resultado es el esperado?
+        ¿Se está deteniendo el movimiento de esta manera o el objeto permanece con esa velocidad para siempre? ¿Cómo podríamos hacer para que la velocidad vaya disminuyendo de a poco?
+        ¿Cómo se podría aplicar esto para reemplazar el movimiento que ya tenemos implementado en la nave?
+         */
+    }
 }

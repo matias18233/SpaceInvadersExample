@@ -26,7 +26,7 @@ ScriptsOnlyBuild:
     - UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
     - UnityEngine.TestTools.TestRunner.PlaymodeTestsController
   sceneClasses:
-    Assets/InitTestScene637465189434462784.unity:
+    Assets/InitTestScene637473763753842900.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -40,11 +40,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12860}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 14216}
     - Class: 114
-      Script: {instanceID: 14302}
+      Script: {instanceID: 14306}
     - Class: 114
-      Script: {instanceID: 14320}
+      Script: {instanceID: 14324}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -546,5 +546,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
-  - Assets/InitTestScene637465189434462784.unity
-  playerPath: C:/xampp/htdocs/SpaceInvadersExample/SpaceInvaders/Temp/UnityTempFile-b65d3aa47f3a8b540b5a540156e3cc44/PlayerWithTests/PlayerWithTests.exe
+  - Assets/InitTestScene637473763753842900.unity
+  playerPath: C:/xampp/htdocs/SpaceInvadersExample/SpaceInvaders/Temp/UnityTempFile-10a77b03575bdf0449f8ee2a5398a54d/PlayerWithTests/PlayerWithTests.exe
